@@ -1,0 +1,36 @@
+ <canvas width="600" height="400">
+ 	
+
+ </canvas>
+<script >
+	
+
+		var pantalla =document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+
+		pincel.fillStyle = fillStyle="lightgray";//propiedad
+		pincel.fillRect(0,0,600,400);// funcion
+
+		function exibirAlerta(event) {
+			var x= event.pageX - pantalla.offsetLeft;
+			var y= event.pageY- pantalla.offsetTop;
+			console.log(event);
+			alert(x+","+y);
+}
+		function Circulo(event) {
+			var x= event.pageX - pantalla.offsetLeft;
+			var y= event.pageY- pantalla.offsetTop;
+
+			pincel.fillStyle= "Red";
+			pincel.beginPath();
+			pincel.arc(x,y,10,0,2*3.14);
+			pincel.fill();
+
+			console.log(x+","+y);
+			 
+		}
+		pantalla.onclick= Circulo;
+		
+
+</script>

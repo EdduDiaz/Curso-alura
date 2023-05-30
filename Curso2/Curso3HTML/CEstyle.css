@@ -1,0 +1,103 @@
+:root{
+    --principal:rgb(166, 166, 255);
+    --blanco:rgb(255,255,255);
+    --oscuro:rgb(56, 54, 54);
+    --azul: rgba(20, 12, 90, 0.87);
+    
+}
+/*Diseño general*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--principal) 2%, var(--blanco) 20% );
+    background: rgba(242,246,248,1);
+}
+
+.fondo {
+    background-color: var(--principal);
+    padding: 20px;
+}
+.contenedor{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+.Cont{
+    position: absolute;
+    background-color: var();
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+/*Tipografia*/
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+h6{
+    font-size: 0.8rem;
+}
+h1,h2,h6,p{
+    text-align: center;  
+    font-weight:700 ;
+}
+
+/*Titulo*/
+.titulo span{
+    font-size: 2rem;
+}
+label{
+    font-family: 'Ubuntu', sans-serif;
+}
+.Cont h1{
+    color: var(--blanco)
+}
+
+.boton{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: .3rem 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+
+}
+.sombra{
+
+    box-shadow: -1px 5px 15px 0px rgba(112,112,112,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.alura{
+    background-image: url(Imagen/logo-alura.png);
+    background-repeat: no-repeat;
+    background-size: 15rem;
+    height: 10rem;
+    position: relative;
+
+}
+
+
+
+
